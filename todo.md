@@ -1,7 +1,7 @@
 # RISC-V (RV32I) Core – TODO
 
 ## 1. Setup
-- [ ] Download RISC-V Unprivileged ISA spec (RV32I)
+- [x] Download RISC-V Unprivileged ISA spec (RV32I)
       → https://docs.riscv.org/reference/isa/unpriv/rv32.html
 - [ ] Define instruction formats (R/I/S/B/U/J)
       → understand bit layouts + where opcode/rs1/rs2/rd/immediates live
