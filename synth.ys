@@ -6,6 +6,6 @@ write_rtlil
 
 proc; opt
 
-write_verilog synth.v
+write_verilog synth/synth.v
 
 show
