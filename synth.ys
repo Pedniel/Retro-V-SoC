@@ -1,0 +1,11 @@
+read -sv src/retro_v_top.sv
+
+hierarchy -top retro_v_top
+
+write_rtlil
+
+proc; opt
+
+write_verilog synth.v
+
+show
