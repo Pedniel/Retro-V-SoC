@@ -6,6 +6,7 @@
 - [ ] Define instruction formats (R/I/S/B/U/J)
       → understand bit layouts + where opcode/rs1/rs2/rd/immediates live
 - [ ] Set up project structure (src/, tb/)
+- [ ] Use array for registers instead of hardcoded regs.
 
 ## 2. Basic Components
 - [ ] Implement PC register
