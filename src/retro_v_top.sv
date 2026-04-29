@@ -8,16 +8,16 @@ module retro_v_top (
               x30, x31, pc;
 
 
-   logic [7:0]     register  = 7'b0110011;
-   logic [7:0]     immediate = 7'b0010011;
-   logic [7:0]     load      = 7'b0000011;
-   logic [7:0]     store     = 7'b0100011;
+   localparam [6:0]     register  = 7'b0110011;
+   localparam [6:0]     immediate = 7'b0010011;
+   localparam [6:0]     load      = 7'b0000011;
+   localparam [6:0]     store     = 7'b0100011;
  
 
    always_comb begin
       case (instruction[6:0])
         immediate: begin
-
+           immediate_instruct(instruction[31:7]);           
         end
         register: begin
            
@@ -30,5 +30,10 @@ module retro_v_top (
         end        
       endcase // case (instruction[6:0])
    end
-   
+
+   function byte immediate_instruct(logic [24:0] instruction_imm):
+     case (instruction_imm):
+       
+     endcase
+   endfunction 
 endmodule  
